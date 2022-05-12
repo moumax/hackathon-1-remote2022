@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const list = require("../assets/list.json");
+const list = require("../assets/aliments.json");
 
 const RandomApi = () => {
   const [aliment, setAliment] = useState();
@@ -13,7 +13,11 @@ const RandomApi = () => {
     setIdSelected(e.target.value);
   };
 
-  // const calculScore = score === scoreTotal;
+  const resetScore = () => {
+    setScore(0);
+  };
+
+  const calculScore = score === scoreTotal;
 
   const API = `https://koumoul.com/data-fair/api/v1/datasets/agribalyse-synthese/lines?format=json&q_mode=simple&qs=${idSelected}`;
 
@@ -41,7 +45,8 @@ const RandomApi = () => {
         ))}
       </select>
       <p>Score de l'ingrédient sélectionné : {score}</p>
-      <p>Score total : {scoreTotal}</p>
+      <p>Score total : {}</p>
+      <button onClick={resetScore}>Reset</button>
     </div>
   );
 };
