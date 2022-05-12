@@ -9,7 +9,7 @@ const foodList = require ("../assets/aliments.json");
 
 function FoodAnalysis() {
     return (
-      <div>
+      <div className="foodItem-container">
         <RandomApi />
         <div className="foodlist">
           {foodList &&

@@ -1,8 +1,39 @@
 @import "./variables.css";
 @import "./App.css";
 
-
 .imgItem {
-    height: 2rem;
+    height: 1rem;
     width: auto;
+}
+
+.foodItem-container {
+    display:flex;
+    flex-direction: column;
+    width: 50vw;
+    margin-left: 70px;
+    height: 70vh;
+    overflow: scroll;
+}
+
+.foodlist {
+    display: grid;
+    grid-template-columns: repeat(5,80px);
+    gap: 30px;
+    /* background-color:red; */
+    justify-content:center;
+    margin-top: 40px;
+}
+
+.fooditem {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100px;
+    height: 100px;
+    background-color: #A9D4C7;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items:center;
+    cursor: pointer;
 }
