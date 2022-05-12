@@ -21,7 +21,7 @@ const RandomApi = () => {
 
   return (
     <div>
-      <h1>Random API - La bouffe</h1>
+      <h1>Your food analysis</h1>
       <h2>{aliment}</h2>
       <h3>{score}</h3>
     </div>
