@@ -1,7 +1,7 @@
 [
 
     
-    {"nom":"Vin Blanc", "id":"5200", "type":"Boissons", "img":"./img/assets/kevin-fromage.png"},
+    {"nom":"Vin Blanc", "id":"5200", "type":"Boissons", "img":"/src/img/assets/kevin-fromage.png"},
     {"nom":"Vin Rouge", "id":"5204", "type":"Boissons", "img":"./img/assets/kevin-fromage.png"},
     {"nom":"Vin Rosé", "id":"5206", "type":"Boissons", "img":"./img/assets/kevin-fromage.png"},
     {"nom":"Cola", "id":"18018", "type":"Boissons", "img":"./img/assets/kevin-fromage.png"},

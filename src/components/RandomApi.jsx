@@ -7,7 +7,8 @@ const RandomApi = () => {
   const [aliment, setAliment] = useState();
   const [score, setScore] = useState();
   const [idSelected, setIdSelected] = useState();
-  const [scoreTotal, setScoreTotal] = useState();
+  const [scoreTotal, setScoreTotal] = useState(0);
+  const [count, setCount] = useState(0);
 
   const filterLIst = (e) => {
     setIdSelected(e.target.value);
@@ -16,6 +17,15 @@ const RandomApi = () => {
   const resetScore = () => {
     setScore(0);
   };
+
+  function getinnerText() {
+    const newProduct = document.createElement("li");
+    const toto = [];
+    newProduct.textContent = `${aliment}`;
+    document.querySelector(".essayons").appendChild(newProduct);
+    setScoreTotal(scoreTotal + score);
+    return false;
+  }
 
   const calculScore = score === scoreTotal;
 
@@ -44,9 +54,18 @@ const RandomApi = () => {
           <option key={acc.id}> {acc.nom} </option>
         ))}
       </select>
-      <p>Score de l'ingrédient sélectionné : {score}</p>
-      <p>Score total : {}</p>
       <button onClick={resetScore}>Reset</button>
+
+      <p>
+        Score de l'ingrédient sélectionné : {score}{" "}
+        <button type="button" onClick={() => getinnerText()}>
+          Get
+        </button>
+      </p>
+      <div className="toAdd">Score de tout les ingrédients : {scoreTotal}</div>
+      <div>Score EF : {scoreTotal / 10 / 3}</div>
+      <div className="totalll"></div>
+      <div className="essayons"></div>
     </div>
   );
 };
