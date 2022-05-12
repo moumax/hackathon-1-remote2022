@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const list = require("../assets/list.json");
+const list = require("../assets/aliments.json");
 
 const RandomApi = () => {
   const [aliment, setAliment] = useState();
@@ -11,6 +11,10 @@ const RandomApi = () => {
 
   const filterLIst = (e) => {
     setIdSelected(e.target.value);
+  };
+
+  const resetScore = () => {
+    setScore(0);
   };
 
   const calculScore = score === scoreTotal;
@@ -41,7 +45,8 @@ const RandomApi = () => {
         ))}
       </select>
       <p>Score de l'ingrédient sélectionné : {score}</p>
-      <p>Score total : {calculScore}</p>
+      <p>Score total : {}</p>
+      <button onClick={resetScore}>Reset</button>
     </div>
   );
 };
