@@ -10,7 +10,9 @@ const foodList = require ("../assets/aliments.json");
 function FoodAnalysis() {
     return (
       <div className="foodItem-container">
+        <div className="filter">
         <RandomApi />
+        </div>
         <div className="foodlist">
           {foodList &&
           foodList.map((item) => (
