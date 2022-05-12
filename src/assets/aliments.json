@@ -5,7 +5,7 @@
     {"nom":"Vin Rouge", "id":"5204", "type":"Boissons", "img":"./img/assets/kevin-fromage.png"},
     {"nom":"Vin Rosé", "id":"5206", "type":"Boissons", "img":"./img/assets/kevin-fromage.png"},
     {"nom":"Cola", "id":"18018", "type":"Boissons", "img":"./img/assets/kevin-fromage.png"},
-    {"nom":"Oeufs", "id":"22000", "type":"VPO", "img":"./img/assets/kevin-fromage.png"},
+    {"nom":"Oeufs", "id":"22000", "type":"VPO", "img":"./img/assets/egg.png"},
     {"nom":"Boisson à base d'avoine", "id": "18905", "type":"Boissons", "img":"./img/assets/kevin-fromage.png"},
     {"nom":"Chocolat au lait", "id": "31004", "type":"Boissons", "img":"./img/assets/kevin-fromage.png"},
     {"nom":"Cacahuete", "id": "15002", "type":"Appéritifs", "img":"./img/assets/kevin-fromage.png"},
