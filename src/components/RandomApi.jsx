@@ -54,7 +54,7 @@ const RandomApi = () => {
   return (
     <div>
       <h1>Random API - La bouffe</h1>
-      <select onChange={filterLIst}>
+      <select onChange={filterLIst} className="filterbar">
         {list.map((acc) => (
           <option key={acc.id} value={acc.id}>
             {" "}
