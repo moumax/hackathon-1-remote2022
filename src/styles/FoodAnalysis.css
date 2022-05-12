@@ -1,8 +1,61 @@
 @import "./variables.css";
 @import "./App.css";
 
-
 .imgItem {
-    height: 2rem;
+    height: 1rem;
     width: auto;
+}
+
+.foodItem-container {
+    display:flex;
+    flex-direction: column;
+    width: 55vw;
+    margin-left: 60px;
+    height: 75vh;
+}
+
+.foodlist {
+    display: grid;
+    grid-template-columns: repeat(5,80px);
+    gap: 20px 50px;
+    justify-content:center;
+    margin-top: 20px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  }
+
+.fooditem {
+    box-shadow: #3D3D3D3D 0px 4px 7px;
+    width: 110px;
+    height: 110px;
+    background-color: #A9D4C7;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items:center;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.fooditem:hover {
+    transform: scale(1.10);
+    transition: transform 0.4s ease-in-out;
+}
+
+.filter {
+    margin-top: 20px;
+    margin-left: 90px;
+}
+.filterbar {
+    border-radius: 10px;
+    height: 30px;
+    width: 300px;
 }

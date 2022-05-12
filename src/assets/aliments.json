@@ -1,290 +1,56 @@
 [
-  {
-    "nom": "Vin Blanc",
-    "id": "5200",
-    "type": "Boissons",
-    "img": "./kevin-fromage.png"
-  },
-  {
-    "nom": "Vin Rouge",
-    "id": "5204",
-    "type": "Boissons",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Vin Rosé",
-    "id": "5206",
-    "type": "Boissons",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Cola",
-    "id": "18018",
-    "type": "Boissons",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Oeufs",
-    "id": "22000",
-    "type": "VPO",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Boisson à base d'avoine",
-    "id": "18905",
-    "type": "Boissons",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Chocolat au lait",
-    "id": "31004",
-    "type": "Boissons",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Cacahuete",
-    "id": "15002",
-    "type": "Appéritifs",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Pizza",
-    "id": "25478",
-    "type": "Plats",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Biscuits apéritif",
-    "id": "38107",
-    "type": "Appéritifs",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Croissant",
-    "id": "7620",
-    "type": "Douceurs",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Biscuit sec",
-    "id": "24050",
-    "type": "Douceurs",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Pain au chocolat",
-    "id": "7730",
-    "type": "Douceurs",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Cookies",
-    "id": "24684",
-    "type": "Douceurs",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Riz",
-    "id": "9100",
-    "type": "Céréales et pâtes",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Pates",
-    "id": "9810",
-    "type": "Céréales et pâtes",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Steak haché",
-    "id": "6252",
-    "type": "VPO",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Jambon cru",
-    "id": "28800",
-    "type": "VPO",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Jambon cuit",
-    "id": "28910",
-    "type": "VPO",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Magret de canard",
-    "id": "36206",
-    "type": "VPO",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Chipolata",
-    "id": "30115",
-    "type": "VPO",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Cordon bleu",
-    "id": "25089",
-    "type": "VPO",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Crevette",
-    "id": "10021",
-    "type": "VPO",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Cabillaud",
-    "id": "26043",
-    "type": "VPO",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Sardine",
-    "id": "26065",
-    "type": "VPO",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Thon",
-    "id": "26053",
-    "type": "VPO",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Poisson pané",
-    "id": "26030",
-    "type": "VPO",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Banane",
-    "id": "13005",
-    "type": "Fruits et légumes",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Orange",
-    "id": "13034",
-    "type": "Fruits et légumes",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Fraise",
-    "id": "13014",
-    "type": "Fruits et légumes",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Confiture",
-    "id": "31110",
-    "type": "Douceurs",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Pâte à tartiner",
-    "id": "31032",
-    "type": "Douceurs",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Miel",
-    "id": "31008",
-    "type": "Douceurs",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Sucre blanc",
-    "id": "31016",
-    "type": "Douceurs",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Sucre roux",
-    "id": "31017",
-    "type": "Douceurs",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Sauce bolognaise en boite",
-    "id": "11114",
-    "type": "Plat",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Guacamole",
-    "id": "25620",
-    "type": "Plat",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Houmous",
-    "id": "25621",
-    "type": "Plat",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Ketchup",
-    "id": "11008",
-    "type": "Sauces",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Mayonnaise",
-    "id": "11054",
-    "type": "Sauces",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Tofu",
-    "id": "20904",
-    "type": "Sauces",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Glace à l'eau",
-    "id": "39526",
-    "type": "Douceurs",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Glace au yaourt",
-    "id": "39517",
-    "type": "Douceurs",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Lait",
-    "id": "19042",
-    "type": "Produits laitiers",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Yaourt",
-    "id": "19587",
-    "type": "Produits laitiers",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Dessert nature",
-    "id": "19693",
-    "type": "Appéritifs",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Chips",
-    "id": "4004",
-    "type": "Appéritifs",
-    "img": "./img/kevin-fromage.png"
-  },
-  {
-    "nom": "Beurre",
-    "id": "16402",
-    "type": "Produits laitiers",
-    "img": "./img/kevin-fromage.png"
-  }
+
+    
+    {"nom":"Vin Blanc", "id":"5200", "type":"Boissons", "img":"images/wine.png"},
+    {"nom":"Vin Rouge", "id":"5204", "type":"Boissons", "img":"images/wine.png"},
+    {"nom":"Vin Rosé", "id":"5206", "type":"Boissons", "img":"images/wine.png"},
+    {"nom":"Cola", "id":"18018", "type":"Boissons", "img":"images/soda.png"},
+    {"nom":"Oeufs", "id":"22000", "type":"VPO", "img":"images/egg.png"},
+    {"nom":"Boisson à base d'avoine", "id": "18905", "type":"Boissons", "img":"images/oat-milk.png"},
+    {"nom":"Chocolat au lait", "id": "31004", "type":"Boissons", "img":"images/chocolate.png"},
+    {"nom":"Cacahuete", "id": "15002", "type":"Appéritifs", "img":"images/peanut.png"},
+    {"nom":"Pizza", "id": "25478", "type":"Plats", "img":"images/pizza.png"},
+    {"nom":"Biscuits apéritif", "id": "38107", "type":"Appéritifs", "img":"images/pretzel.png"},
+    {"nom":"Croissant", "id": "7620", "type":"Douceurs", "img":"images/croissant.png"},
+    {"nom":"Biscuit sec", "id": "24050", "type":"Douceurs", "img":"images/biscuit.png"},
+    {"nom":"Pain au chocolat", "id": "7730", "type":"Douceurs", "img":"images/pain-au-chocolat.png"},
+    {"nom":"Cookies", "id": "24684", "type":"Douceurs", "img":"images/cookies.png"},
+    {"nom":"Riz", "id": "9100", "type":"Céréales et pâtes", "img":"images/rice.png"},
+    {"nom":"Pates", "id": "9810", "type":"Céréales et pâtes", "img":"images/pasta.png"},
+    {"nom":"Steak haché", "id": "6252", "type":"VPO", "img":"images/steak.png"},
+    {"nom":"Jambon cru", "id": "28800", "type":"VPO", "img":"images/raw-ham.png"},
+    {"nom":"Jambon cuit", "id": "28910", "type":"VPO", "img":"images/cooked-ham.png"},
+    {"nom":"Magret de canard", "id": "36206", "type":"VPO", "img":"images/duck.png"},
+    {"nom":"Chipolata", "id": "30115", "type":"VPO", "img":"images/sausage.png"},
+    {"nom":"Cordon bleu", "id": "25089", "type":"VPO", "img":"images/cordon-bleu.png"},
+    {"nom":"Crevette", "id": "10021", "type":"VPO", "img":"images/shrimp.png"},
+    {"nom":"Cabillaud", "id": "26043", "type":"VPO", "img":"images/cabillaud.png"},
+    {"nom":"Sardine", "id": "26065", "type":"VPO", "img":"images/sardine.png"},
+    {"nom":"Thon", "id": "26053", "type":"VPO", "img":"images/tuna.png"},
+    {"nom":"Poisson pané", "id": "26030", "type":"VPO", "img":"images/poisson-pane.png"},
+    {"nom":"Banane", "id": "13005", "type":"Fruits et légumes", "img":"images/banana.png"},
+    {"nom":"Orange", "id": "13034", "type":"Fruits et légumes", "img":"images/orange.png"},
+    {"nom":"Fraise", "id": "13014", "type":"Fruits et légumes", "img":"images/strawberry.png"},
+    {"nom":"Confiture", "id": "31110", "type":"Douceurs", "img":"images/jam.png"},
+    {"nom":"Pâte à tartiner", "id": "31032", "type":"Douceurs", "img":"images/nutella.png"},
+    {"nom":"Miel", "id": "31008", "type":"Douceurs", "img":"images/honey.png"},
+    {"nom":"Sucre blanc", "id": "31016", "type":"Douceurs", "img":"images/sugar.png"},
+    {"nom":"Sucre roux", "id": "31017", "type":"Douceurs", "img":"images/brown-sugar.png"},
+    {"nom":"Sauce bolognaise en boite", "id": "11114", "type":"Plat", "img":"images/tomato-sauce.png"},
+    {"nom":"Guacamole", "id": "25620", "type":"Plat", "img":"images/guacamole.png"},
+    {"nom":"Houmous", "id": "25621", "type":"Plat", "img":"images/hummus.png"},
+    {"nom":"Ketchup", "id": "11008", "type":"Sauces", "img":"images/ketchup.png"},
+    {"nom":"Mayonnaise", "id": "11054", "type":"Sauces", "img":"images/mayonnaise.png"},
+    {"nom":"Tofu", "id": "20904", "type":"Sauces", "img":"images/tofu.png"},
+    {"nom":"Glace à l'eau", "id": "39526", "type":"Douceurs", "img":"images/water-icecream.png"},
+    {"nom":"Glace au yaourt", "id": "39517", "type":"Douceurs", "img":"images/icecream.png"},
+    {"nom":"Lait", "id": "19042", "type":"Produits laitiers", "img":"images/milk.png"},
+    {"nom":"Yaourt", "id": "19587", "type":"Produits laitiers", "img":"images/yogurt.png"},
+    {"nom":"Dessert nature", "id": "19693", "type":"Appéritifs", "img":"images/yogurt.png"},
+    {"nom":"Chips", "id": "4004", "type":"Appéritifs", "img":"images/chips.png"},
+    {"nom":"Beurre", "id": "16402", "type":"Produits laitiers", "img":"images/butter.png"}
+    
+    
+    
+     
 ]
