@@ -42,7 +42,7 @@
     {"nom":"Ketchup", "id": "11008", "type":"Sauces", "img":"./img/assets/kevin-fromage.png"},
     {"nom":"Mayonnaise", "id": "11054", "type":"Sauces", "img":"./img/assets/kevin-fromage.png"},
     {"nom":"Tofu", "id": "20904", "type":"Sauces", "img":"./img/assets/kevin-fromage.png"},
-    {"nom":"Glace à l'eau", "id": "39526", "type":"Douceurs", "img":"./img/assets/kevin-fromage.png"},
+    {"nom":"Glace à eau", "id": "39526", "type":"Douceurs", "img":"./img/assets/kevin-fromage.png"},
     {"nom":"Glace au yaourt", "id": "39517", "type":"Douceurs", "img":"./img/assets/kevin-fromage.png"},
     {"nom":"Lait", "id": "19042", "type":"Produits laitiers", "img":"./img/assets/kevin-fromage.png"},
     {"nom":"Yaourt", "id": "19587", "type":"Produits laitiers", "img":"./img/assets/kevin-fromage.png"},
