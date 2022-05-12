@@ -1,6 +1,7 @@
 import React from "react";
 import FoodItem from "../components/FoodItem";
 import RandomApi from "../components/RandomApi";
+import Basket from "../components/Basket";
 import "../styles/FoodAnalysis.css";
 import "../styles/App.css";
 import "../styles/variables.css";
@@ -8,9 +9,12 @@ import "../styles/variables.css";
 const foodList = require("../assets/aliments.json");
 
 function FoodAnalysis() {
-  return (
-    <div className="foodItem-container">
-      <div className="filter">
+    return (
+      <div className="foodItem-container">
+        <div className="basket">
+          <Basket />
+        </div>
+        <div className="filter">
         <RandomApi />
       </div>
       <div className="foodlist">
