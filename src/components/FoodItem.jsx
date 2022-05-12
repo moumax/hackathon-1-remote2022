@@ -1,13 +1,11 @@
 import React from "react";
-const list = require("../assets/aliments.json");
+import "../assets/aliments.json";
 
-const img1 = require("../assets/img/kevin-fromage.png");
-
-const FoodItem = () => {
+const FoodItem = ({ nom, pic }) => {
   return (
-    <div>
-      <div>{list.nom}</div>
-      <img src={list.img} className="imgItem" />
+    <div className="fooditem">
+      <img src={pic} alt={nom} className="imgItem" />
+      <div>{nom}</div>
     </div>
   );
 };
