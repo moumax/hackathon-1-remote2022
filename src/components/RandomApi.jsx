@@ -13,6 +13,12 @@ const RandomApi = () => {
     setIdSelected(e.target.value);
   };
 
+  const [selectedType, setselectedType] = useState();
+  const filterByType = (e) => {
+    setselectedType(e.target.value);
+  };
+  console.log(selectedType)
+
   const resetScore = () => {
     setScore(0);
   };
@@ -39,11 +45,26 @@ const RandomApi = () => {
   return (
     <div>
       <h1>Random API - La bouffe</h1>
-      <select onChange={filterLIst}>
-        {list.map((acc) => (
-          <option key={acc.id}> {acc.nom} </option>
-        ))}
-      </select>
+      <form className="">
+        <label htmlFor="type-select">
+        Filter by{" "}
+          <select onChange={filterByType}>
+            <option value="">---</option>
+            {list.map((aliment) => (
+              <option value={aliment.type} key={aliment.id}> {aliment.type} </option>
+            ))}
+          </select>
+      </label>
+      </form>
+      <div>
+      {list
+          .filter(
+            (aliment) =>
+            selectedType
+                ? aliment.type === selectedType
+                : aliment
+          ).map((aliment) => <li key={aliment.id}>{aliment.nom}</li>)}
+      </div>
       <p>Score de l'ingrédient sélectionné : {score}</p>
       <p>Score total : {}</p>
       <button onClick={resetScore}>Reset</button>
