@@ -1,1 +1,0 @@
-# hackathon-1-remote2022
