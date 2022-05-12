@@ -8,7 +8,7 @@ const RandomApi = () => {
   const [score, setScore] = useState();
   const [idSelected, setIdSelected] = useState();
   const [scoreTotal, setScoreTotal] = useState(0);
-  const [count, setCount] = useState(0);
+  const [state, setState] = useState(0);
 
   const filterLIst = (e) => {
     setIdSelected(e.target.value);
@@ -17,17 +17,6 @@ const RandomApi = () => {
   const resetScore = () => {
     setScore(0);
   };
-
-  function getinnerText() {
-    const newProduct = document.createElement("li");
-    const toto = [];
-    newProduct.textContent = `${aliment}`;
-    document.querySelector(".essayons").appendChild(newProduct);
-    setScoreTotal(scoreTotal + score);
-    return false;
-  }
-
-  const calculScore = score === scoreTotal;
 
   const API = `https://koumoul.com/data-fair/api/v1/datasets/agribalyse-synthese/lines?format=json&q_mode=simple&qs=${idSelected}`;
 
@@ -46,6 +35,21 @@ const RandomApi = () => {
       .catch((e) => console.error(e));
   }, [idSelected]);
 
+  useEffect(() => {
+    if (state.count >= 10 || state.count <= -10) {
+      setState({ ...state, incValue: 10 });
+    }
+  }, [state.count]);
+
+  function getinnerText() {
+    setState(state + 1);
+    const newProduct = document.createElement("li");
+    newProduct.textContent = `${aliment}`;
+    document.querySelector(".essayons").appendChild(newProduct);
+    setScoreTotal(scoreTotal + score);
+    return false;
+  }
+  console.log(state);
   return (
     <div>
       <h1>Random API - La bouffe</h1>
@@ -63,7 +67,7 @@ const RandomApi = () => {
         </button>
       </p>
       <div className="toAdd">Score de tout les ingrédients : {scoreTotal}</div>
-      <div>Score EF : {scoreTotal / 10 / 3}</div>
+      <div>Score EF : {scoreTotal / 10 / state}</div>
       <div className="totalll"></div>
       <div className="essayons"></div>
     </div>
