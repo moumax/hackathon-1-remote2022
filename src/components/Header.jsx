@@ -2,11 +2,12 @@ import { NavLink } from "react-router-dom";
 import "../styles/NavBar.css";
 // const logo = require("../assets/img/veggies-logo.png");
 
-function Home() {
+function NavBar() {
     return (
         <nav className="navbar">
           <div className="logo">
             {/* <img src={logo} alt="logo"/> */}
+            <h1>Foodie Score</h1>
           </div>
           <div className="pages">
             <NavLink to="/">
@@ -23,4 +24,4 @@ function Home() {
     );
   };
   
-export default Home;
+export default NavBar;

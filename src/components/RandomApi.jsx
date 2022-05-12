@@ -34,11 +34,6 @@ const RandomApi = () => {
 
   return (
     <div>
-<<<<<<< HEAD
-      <h1>Your food analysis</h1>
-      <h2>{aliment}</h2>
-      <h3>{score}</h3>
-=======
       <h1>Random API - La bouffe</h1>
       <select onChange={filterLIst}>
         {list.map((acc) => (
@@ -47,7 +42,6 @@ const RandomApi = () => {
       </select>
       <p>Score de l'ingrédient sélectionné : {score}</p>
       <p>Score total : {scoreTotal}</p>
->>>>>>> 1302cfe494d4bbf805b308758efb1a3963a78220
     </div>
   );
 };
