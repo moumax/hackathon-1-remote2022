@@ -1,28 +1,27 @@
 import React from "react";
 import FoodItem from "../components/FoodItem";
+import RandomApi from "../components/RandomApi";
 import "../styles/App.css"
 import "../styles/variables.css"
 
 const foodList = require ("../assets/aliments.json");
 
 function FoodAnalysis() {
-
     return (
-      <div className="background">
-      <div className="container-background">
-      <div className="foodlist">
-        {foodList &&
-        foodList.map((item) => (
-          <article key={item.name}>
-            <FoodItem
-            key={item.name}
-            name={item.name}
-            image={item.img}
-             />
-          </article>
-        ))}
-      </div>
-      </div>
+      <div>
+        <RandomApi />
+        <div className="foodlist">
+          {foodList &&
+          foodList.map((item) => (
+            <article key={item.id}>
+              <FoodItem
+              key={item.id}
+              name={item.nom}
+              image={item.img}
+              />
+            </article>
+          ))}
+        </div>
       </div>
     );
   };

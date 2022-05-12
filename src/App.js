@@ -1,18 +1,15 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import FoodAnalysis from "./pages/FoodAnalysis";
-import AboutUs from "./pages/AboutUs";
+import Header from "./components/Header";
+import Main from "./components/Main";
 
 const App = () => {
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/foodAnalysis" element={<FoodAnalysis />} />
-        <Route path="/aboutUs" element={<AboutUs />} />
-      </Routes>
-    </>
+    <div className="background">
+      <div className="container-background">
+        <Header />
+        <Main />
+      </div>
+    </div>
   );
 };
 
