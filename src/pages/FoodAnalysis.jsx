@@ -1,6 +1,7 @@
 import React from "react";
 import FoodItem from "../components/FoodItem";
 import RandomApi from "../components/RandomApi";
+import "../styles/FoodAnalysis.css";
 import "../styles/App.css"
 import "../styles/variables.css"
 
@@ -16,8 +17,8 @@ function FoodAnalysis() {
             <article key={item.id}>
               <FoodItem
               key={item.id}
-              name={item.nom}
-              image={item.img}
+              nom={item.nom}
+              img={item.img}
               />
             </article>
           ))}
