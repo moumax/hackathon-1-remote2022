@@ -7,10 +7,13 @@ const RandomApi = () => {
   const [aliment, setAliment] = useState();
   const [score, setScore] = useState();
   const [idSelected, setIdSelected] = useState();
+  const [scoreTotal, setScoreTotal] = useState();
 
   const filterLIst = (e) => {
     setIdSelected(e.target.value);
   };
+
+  // const calculScore = score === scoreTotal;
 
   const API = `https://koumoul.com/data-fair/api/v1/datasets/agribalyse-synthese/lines?format=json&q_mode=simple&qs=${idSelected}`;
 
@@ -34,10 +37,11 @@ const RandomApi = () => {
       <h1>Random API - La bouffe</h1>
       <select onChange={filterLIst}>
         {list.map((acc) => (
-          <option key={acc.id}> {acc.no} </option>
+          <option key={acc.id}> {acc.nom} </option>
         ))}
       </select>
-      <p>{score}</p>
+      <p>Score de l'ingrédient sélectionné : {score}</p>
+      <p>Score total : {scoreTotal}</p>
     </div>
   );
 };
