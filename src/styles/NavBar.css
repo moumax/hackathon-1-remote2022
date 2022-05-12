@@ -1,6 +1,11 @@
 .navbar {
-    width: 100%;
+    width: 90vw;
     height: 10vh;
-    /* background-color: var(--primary-color); */
+    background-color: var(--primary-color);
     text-decoration: none;
+}
+
+img .logo {
+    width: 30px;
+    height: auto;
 }

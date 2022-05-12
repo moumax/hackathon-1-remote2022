@@ -1,10 +1,14 @@
 import { NavLink } from "react-router-dom";
 import "../styles/NavBar.css";
+// const logo = require("../assets/img/veggies-logo.png");
 
 function Home() {
     return (
         <nav className="navbar">
-          <div>
+          <div className="logo">
+            {/* <img src={logo} alt="logo"/> */}
+          </div>
+          <div className="pages">
             <NavLink to="/">
               Home
             </NavLink>

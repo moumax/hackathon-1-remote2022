@@ -1,8 +1,11 @@
 import React from 'react'
 
-const FoodItem = () => {
+const FoodItem = ({ name, img }) => {
   return (
-    <div>FoodItem</div>
+    <div>
+    <div>{name}</div>
+    <img src={img} alt={name} className="imgItem" />
+    </div>
   )
 }
 
