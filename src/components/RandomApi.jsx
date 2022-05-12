@@ -13,7 +13,7 @@ const RandomApi = () => {
     setIdSelected(e.target.value);
   };
 
-  // const calculScore = score === scoreTotal;
+  const calculScore = score === scoreTotal;
 
   const API = `https://koumoul.com/data-fair/api/v1/datasets/agribalyse-synthese/lines?format=json&q_mode=simple&qs=${idSelected}`;
 
@@ -41,7 +41,7 @@ const RandomApi = () => {
         ))}
       </select>
       <p>Score de l'ingrédient sélectionné : {score}</p>
-      <p>Score total : {scoreTotal}</p>
+      <p>Score total : {calculScore}</p>
     </div>
   );
 };
