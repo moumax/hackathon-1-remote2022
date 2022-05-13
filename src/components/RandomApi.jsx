@@ -51,6 +51,8 @@ const RandomApi = ({ selectedType, filterByType }) => {
     return false;
   }
   console.log(API);
+
+
   return (
     <div>
       <h1>Random API - La bouffe</h1>
@@ -59,9 +61,10 @@ const RandomApi = ({ selectedType, filterByType }) => {
         Filter by{" "}
           <select onChange={filterByType} className="filterbar">
             <option value="">---</option>
-            {/* Condition dans la liste */}
-            {list.map((aliment) => (
-              <option value={aliment.type} key={aliment.id}>{" "}{aliment.type}{" "}</option>
+            {list
+            .filter((categorie, index, self) => self.findIndex( v => v.type === categorie.type) === index)
+            .map((categorie) => (
+              <option value={categorie.type} key={categorie.id}>{" "}{categorie.type}{" "}</option>
             ))}
           </select>
       </label>

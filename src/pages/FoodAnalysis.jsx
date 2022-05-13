@@ -16,26 +16,28 @@ function FoodAnalysis() {
   console.log(selectedType)
 
     return (
-      <div className="foodItem-container">
+      <div className="globalcontainer">
         <div className="basket">
           <Basket />
         </div>
-        <div className="filter">
-        <RandomApi filterByType={filterByType} selectedType={selectedType} foodList={foodList}/>
-      </div>
-      <div className="foodlist">
-        {foodList &&
-          foodList
-          .filter(
-            (aliment) =>
-            selectedType
-                ? aliment.type === selectedType
-                : aliment)
-          .map((item) => (
-            <article key={item.id}>
-              <FoodItem key={item.id} nom={item.nom} pic={item.img} />
-            </article>
-          ))}
+        <div className="foodItem-container">
+          <div className="filter">
+          <RandomApi filterByType={filterByType} selectedType={selectedType} foodList={foodList}/>
+        </div>
+        <div className="foodlist">
+          {foodList &&
+            foodList
+            .filter(
+              (aliment) =>
+              selectedType
+                  ? aliment.type === selectedType
+                  : aliment)
+            .map((item) => (
+              <article key={item.id}>
+                <FoodItem key={item.id} nom={item.nom} pic={item.img} />
+              </article>
+            ))}
+        </div>
       </div>
     </div>
   );
