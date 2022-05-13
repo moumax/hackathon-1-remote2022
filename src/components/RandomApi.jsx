@@ -4,7 +4,7 @@ import "../styles/result.css";
 
 const list = require("../assets/aliments.json");
 
-const RandomApi = () => {
+const RandomApi = ({ selectedType, filterByType }) => {
   const [aliment, setAliment] = useState("");
   const [score, setScore] = useState(0);
   const [idSelected, setIdSelected] = useState([1]);
@@ -14,12 +14,6 @@ const RandomApi = () => {
   const filterLIst = (e) => {
     setIdSelected(e.target.value);
   };
-
-  const [selectedType, setselectedType] = useState();
-  const filterByType = (e) => {
-    setselectedType(e.target.value);
-  };
-  console.log(selectedType)
 
   const resetScore = () => {
     setScore(0);
@@ -65,6 +59,7 @@ const RandomApi = () => {
         Filter by{" "}
           <select onChange={filterByType} className="filterbar">
             <option value="">---</option>
+            {/* Condition dans la liste */}
             {list.map((aliment) => (
               <option value={aliment.type} key={aliment.id}>{" "}{aliment.type}{" "}</option>
             ))}
@@ -72,13 +67,6 @@ const RandomApi = () => {
       </label>
       </form>
       <div>
-      {list
-          .filter(
-            (aliment) =>
-            selectedType
-                ? aliment.type === selectedType
-                : aliment
-          ).map((aliment) => <li key={aliment.id}>{aliment.nom}</li>)}
       </div>
       <p>Score de l'ingrédient sélectionné : {score}</p>
       <p>Score total : {}</p>
