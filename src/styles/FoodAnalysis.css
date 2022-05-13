@@ -59,3 +59,17 @@
     height: 30px;
     width: 300px;
 }
+.globalcontainer{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 100px;
+}
+
+.basket {
+    background-color: var(--primary-color);
+    width: 250px;
+    height: 500px;
+    margin-right: 40px;
+    margin-top: 50px;
+    border-radius: 10px;
+}

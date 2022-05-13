@@ -1,11 +1,10 @@
 import React from "react";
+import "../assets/aliments.json";
 
-const img1 = require("../assets/img/kevin-fromage.png");
-
-const FoodItem = ({ nom, img }) => {
+const FoodItem = ({ nom, pic }) => {
   return (
     <div className="fooditem">
-      <img src={img1} className="imgItem" />
+      <img src={pic} alt={nom} className="imgItem" />
       <div>{nom}</div>
     </div>
   );

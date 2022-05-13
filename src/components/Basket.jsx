@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import "../styles/FoodAnalysis.css";
 
 const Basket = () => {
   return (
-    <div>Basket</div>
+    <div>Your Foodie Score</div>
   )
 }
 
