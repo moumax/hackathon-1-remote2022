@@ -60,8 +60,9 @@
   color: var(--accent-color);
 }
 
-hr .little-separator {
+.little-separator {
   width: 40vw;
   border-radius: 10px;
-  border: 1px solid var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  background-color: var(--secondary-color);
 }
