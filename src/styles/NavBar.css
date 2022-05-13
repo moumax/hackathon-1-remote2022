@@ -32,7 +32,7 @@ img {
   width: 30%;
 }
 
-a {
+.link-nav {
   color: var(--primary-color);
   text-decoration: none;
 }
