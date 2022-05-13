@@ -5,7 +5,7 @@ const FoodItem = ({ nom, pic }) => {
   return (
     <div className="fooditem">
       <img src={pic} alt={nom} className="imgItem" />
-      <div>{nom}</div>
+      <div className="fontsize">{nom}</div>
     </div>
   );
 };
