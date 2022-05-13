@@ -10,7 +10,7 @@
   .home-text {
     width: 70vw;
   }
-  .home-image{
+  .home-image {
     border-radius: 20px;
     width: 50vw;
     margin-bottom: 20px;
@@ -45,16 +45,16 @@
   .main-quote > p > .strong-word {
     color: var(--accent-color);
   }
-  
+
   .author {
     margin-left: 80%;
     height: 8vh;
   }
-  
+
   .author > p {
     color: var(--accent-color);
   }
-  
+
   .little-separator {
     width: 40vw;
     border-radius: 10px;
@@ -76,17 +76,17 @@
     width: 40vw;
     margin-right: 30px;
   }
-  
+
   .home-text > p {
     line-height: 30px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: var(--font-color);
     text-align: justify;
   }
-  
+
   .home-text > p .lettrine {
     letter-spacing: 2px;
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: var(--primary-color);
     font-family: var(--font-title);
   }
@@ -94,7 +94,7 @@
     border-radius: 20px;
     width: 25vw;
   }
-  
+
   .container-quote {
     display: flex;
     flex-direction: column;
@@ -102,7 +102,7 @@
     justify-content: space-between;
     margin: 5vh;
   }
-  
+
   .main-quote > p {
     text-transform: uppercase;
     font-weight: bold;
@@ -114,16 +114,16 @@
   .main-quote > p > .strong-word {
     color: var(--accent-color);
   }
-  
+
   .author {
     margin-left: 80%;
-    height: 8vh;
+    height: 5vh;
   }
-  
+
   .author > p {
     color: var(--accent-color);
   }
-  
+
   .little-separator {
     width: 40vw;
     border-radius: 10px;
@@ -144,14 +144,14 @@
     width: 60vw;
     margin-right: 30px;
   }
-  
+
   .home-text > p {
     line-height: 30px;
     font-size: 1rem;
     color: var(--font-color);
     text-align: justify;
   }
-  
+
   .home-text > p .lettrine {
     letter-spacing: 2px;
     font-size: 2rem;
@@ -162,7 +162,7 @@
     border-radius: 20px;
     width: 25rem;
   }
-  
+
   .container-quote {
     display: flex;
     flex-direction: column;
@@ -170,7 +170,7 @@
     justify-content: space-between;
     margin: 5vh;
   }
-  
+
   .main-quote > p {
     text-transform: uppercase;
     font-weight: bold;
@@ -182,16 +182,16 @@
   .main-quote > p > .strong-word {
     color: var(--accent-color);
   }
-  
+
   .author {
     margin-left: 80%;
-    height: 6vh;
+    height: 10vh;
   }
-  
+
   .author > p {
     color: var(--accent-color);
   }
-  
+
   .little-separator {
     width: 40vw;
     border-radius: 10px;
@@ -200,8 +200,7 @@
   }
 }
 
-
-
-
-
-
+.important {
+  color: var(--accent-color);
+  font-weight: bold;
+}
