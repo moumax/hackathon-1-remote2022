@@ -1,11 +1,12 @@
 import React from "react";
 import "../assets/aliments.json";
+import FoodAnalysis from "../pages/FoodAnalysis";
 
-const FoodItem = ({ nom, pic }) => {
+const FoodItem = ({ nom, pic, fnc }) => {
   return (
-    <div className="fooditem">
+    <div className="fooditem" onClick={fnc}>
       <img src={pic} alt={nom} className="imgItem" />
-      <div className="fontsize">{nom}</div>
+      <div>{nom}</div>
     </div>
   );
 };
