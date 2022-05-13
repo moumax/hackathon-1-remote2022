@@ -8,6 +8,7 @@ function NavBar() {
       return {
         color: "var(--accent-color)",
         textDecoration: "underline",
+        textUnderlineOffset: "3px",
       };
     }
     return null;
@@ -20,15 +21,23 @@ function NavBar() {
           <h1>Foodie Score</h1>
         </div>
         <div className="pages">
-          <NavLink to="/" style={getActiveLinkStyle}>
+          <NavLink className="link-nav" to="/" style={getActiveLinkStyle}>
             home
           </NavLink>
           <p>・</p>
-          <NavLink to="/foodAnalysis" style={getActiveLinkStyle}>
+          <NavLink
+            className="link-nav"
+            to="/foodAnalysis"
+            style={getActiveLinkStyle}
+          >
             food analysis
           </NavLink>
           <p>・</p>
-          <NavLink to="/aboutUs" style={getActiveLinkStyle}>
+          <NavLink
+            className="link-nav"
+            to="/aboutUs"
+            style={getActiveLinkStyle}
+          >
             about us
           </NavLink>
         </div>
