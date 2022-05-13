@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../styles/result.css";
 import FoodItem from "../components/FoodItem";
+import FilterAliments from "../components/FilterAliments";
 import "../styles/FoodAnalysis.css";
 import "../styles/App.css";
 import "../styles/variables.css";
-const list = require("../assets/aliments.json");
 
 const foodList = require("../assets/aliments.json");
 const basketimg = require("../assets/img/basket-logo.png");
@@ -24,6 +24,12 @@ function FoodAnalysis() {
   const resetScore = () => {
     setScore(0);
   };
+
+  const [selectedType, setselectedType] = useState("");
+    const filterByType = (e) => {
+      setselectedType(e.target.value);
+    };
+    console.log(selectedType)
 
   const API = `https://koumoul.com/data-fair/api/v1/datasets/agribalyse-synthese/lines?format=json&q_mode=simple&qs=${idSelected}`;
   const BLANK = `https://koumoul.com/data-fair/api/v1/datasets/agribalyse-synthese/`;
@@ -110,13 +116,17 @@ function FoodAnalysis() {
       </div>
       <div className="foodItem-container">
         <div className="filter">
-          <div>
-            <div></div>
-          </div>
+          <FilterAliments filterByType={filterByType} selectedType={selectedType} foodList={foodList}/>
         </div>
         <div className="foodlist">
           {foodList &&
-            foodList.map((item) => (
+            foodList
+            .filter(
+              (aliment) =>
+              selectedType
+                  ? aliment.type === selectedType
+                  : aliment)
+            .map((item) => (
               <article key={item.id}>
                 <FoodItem
                   key={item.id}
