@@ -61,6 +61,9 @@
 .filter {
     margin-top: 20px;
     margin-left: 90px;
+    display: flex;
+    justify-content: center;
+
 }
 .filterbar {
     border-radius: 10px;
