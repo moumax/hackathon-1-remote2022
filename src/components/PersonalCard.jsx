@@ -1,8 +1,8 @@
 import React from 'react'
 
-const PersonalCard = () => {
+const PersonalCard = ({ name, pts }) => {
   return (
-    <div>PersonalCard</div>
+    <div>{name}</div>
   )
 }
 
