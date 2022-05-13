@@ -65,11 +65,33 @@
     gap: 100px;
 }
 
-.basket {
+.containerbasket {
     background-color: var(--primary-color);
     width: 250px;
     height: 500px;
     margin-right: 40px;
     margin-top: 50px;
     border-radius: 10px;
+    outline: 1px solid var(--background-color);
+    outline-offset: -15px;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+}
+.counter {
+    margin-top: 340px;
+}
+.counterbox {
+    width: 205px;
+    height: 70px;
+    border-radius: 10px;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: var(--background-color);
+    margin-left: 22px;
+    margin-top: 10px;
+}
+.scoreitems {
+    margin-top:20px;
+    font-family: var( --font-text);
 }
