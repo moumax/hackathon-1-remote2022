@@ -6,9 +6,9 @@ const filterAliments = ({ filterByType }) => {
   return (
       <form className="">
         <label htmlFor="type-select">
-        Filter by{" "}
+        Filtrer par{" "}
           <select onChange={filterByType} className="filterbar">
-            <option value="">---</option>
+            <option value="">--- Sélectionnez une catégorie ---</option>
             {list
             .filter((categorie, index, self) => self.findIndex( v => v.type === categorie.type) === index)
             .map((categorie) => (
