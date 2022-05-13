@@ -1,0 +1,67 @@
+.container-home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5vh 15vh;
+  margin-bottom: 8vh;
+}
+
+.home-text {
+  width: 40vw;
+}
+
+.home-text > p {
+  line-height: 30px;
+  font-size: 1rem;
+  color: var(--font-color);
+  text-align: justify;
+}
+
+.home-text > p .lettrine {
+  letter-spacing: 2px;
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-family: var(--font-title);
+}
+
+.home-image {
+  border-radius: 10px;
+  width: 25rem;
+}
+
+.container-quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5vh;
+}
+
+.main-quote > p {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.main-quote > p > .strong-word {
+  color: var(--accent-color);
+}
+
+.author {
+  margin-left: 80%;
+  height: 8vh;
+}
+
+.author > p {
+  color: var(--accent-color);
+}
+
+hr .little-separator {
+  width: 40vw;
+  border-radius: 10px;
+  border: 1px solid var(--secondary-color);
+}
