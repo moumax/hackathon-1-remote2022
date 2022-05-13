@@ -1,0 +1,31 @@
+@import "./variables.css";
+
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 18vh;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  background: rgb(169, 212, 199);
+  background: linear-gradient(90deg,
+      rgba(169, 212, 199, 1) 0%,
+      rgba(182, 197, 219, 1) 100%);
+  height: 15vh;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-top: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link {
+  color: var(--font-color);
+  margin-right: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: underline var(--background-color) 2px;
+  text-underline-offset: 3px;
+}

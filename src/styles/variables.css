@@ -1,0 +1,32 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+
+@font-face {
+  font-family: "Yeseva One", cursive;
+  src: url("../assets/YesevaOne-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("../assets/Montserrat-VariableFont_wght.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Variables */
+:root {
+  --font-title: "Yeseva One", cursive;
+  --font-text: "Montserrat", sans-serif;
+  --primary-color: #a9d4c7;
+  --secondary-color: #ede2d6;
+  --accent-color: #b6c5db;
+  --background-color: #fcfcfc;
+  --optionnal-color: #e5e5e5;
+  --font-color: #252525;
+}

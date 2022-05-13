@@ -1,0 +1,102 @@
+@import "./variables.css";
+
+.score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.namecard {
+    text-align: center;
+    /* /* font-size: 12em; */
+}
+
+.points {
+    font-size: 2rem;
+}
+
+.imgGit {
+    width: 5vw;
+    margin-right: 2rem;
+}
+
+.containercards {
+    margin-top: 20px;
+    display: grid;
+    justify-items: center;
+    height: 60vh;
+    grid-template-columns: 0.8fr 0.8fr 0.8fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+        "card1. card2"
+        ". card3 ."
+        "card4 . card5";
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    grid-area: card1;
+    box-shadow: #3D3D3D3D 0px 4px 7px;
+    width: 330px;
+    height: 150px;
+    background-color: #A9D4C7;
+    border-radius: 30px;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    grid-area: card2;
+    box-shadow: #3D3D3D3D 0px 4px 7px;
+    width: 330px;
+    height: 150px;
+    background-color: #A9D4C7;
+    border-radius: 30px;
+}
+
+.card3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: card3;
+    box-shadow: #3D3D3D3D 0px 4px 7px;
+    width: 330px;
+    height: 150px;
+    background-color: #A9D4C7;
+    border-radius: 30px;
+}
+
+.card4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: card4;
+    box-shadow: #3D3D3D3D 0px 4px 7px;
+    width: 330px;
+    height: 150px;
+    background-color: #A9D4C7;
+    border-radius: 30px;
+}
+
+.card5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: card5;
+    box-shadow: #3D3D3D3D 0px 4px 7px;
+    width: 330px;
+    height: 150px;
+    background-color: #A9D4C7;
+    border-radius: 30px;
+}
