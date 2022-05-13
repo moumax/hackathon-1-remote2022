@@ -9,21 +9,23 @@ import "../styles/variables.css";
 const foodList = require("../assets/aliments.json");
 
 function FoodAnalysis() {
-    return (
-      <div className="foodItem-container">
-        <div className="basket">
-          <Basket />
-        </div>
-        <div className="filter">
-        <RandomApi />
+  return (
+    <div className="globalcontainer">
+      <div className="basket">
+        <Basket />
       </div>
-      <div className="foodlist">
-        {foodList &&
-          foodList.map((item) => (
-            <article key={item.id}>
-              <FoodItem key={item.id} nom={item.nom} pic={item.img} />
-            </article>
-          ))}
+      <div className="foodItem-container">
+        <div className="filter">
+          <RandomApi />
+        </div>
+        <div className="foodlist">
+          {foodList &&
+            foodList.map((item) => (
+              <article key={item.id}>
+                <FoodItem key={item.id} nom={item.nom} pic={item.img} />
+              </article>
+            ))}
+        </div>
       </div>
     </div>
   );
