@@ -9,13 +9,31 @@ const Home = () => {
       <div className="container-home">
         <div className="home-text">
           <p>
-            <span className="lettrine">L</span>orem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident.
+            <span className="lettrine">B</span>ienvenue sur FoodieScore,
+            <p>Que proposons-nous ?</p>
+            <p>
+              FoodieScore a pour but de sensibiliser la population sur l'impact
+              environnemental que génère notre de mode consommation au niveau
+              alimentaire.
+            </p>
+            Nous mettons à disposition un outil qui vous permet de créer une
+            liste de shopping alimentaire virtuelle et d'avoir un score global.
+            <p>Comment est-ce calculé ?</p> Pour chaque produit, un score unique
+            est calculé à partir de 16 indicateurs d'impact. Ils correspondent à
+            ceux préconisés par la Commission Européenne dans le cadre des
+            travaux sur le projet 'Product Environmental Footprint'.{" "}
+            <p>
+              Parmi ces indicateur, il y a l'impact sur le changement
+              climatique, les particules fines, l'appauvrissement de la couche
+              d'ozone, l'épuisement des ressources en eau, l'usage des terres et
+              la toxicité. Tous ces exemples sont en lien entre autre avec le
+              type d'agriculture, de transport et de conditionnement.{" "}
+              <p>
+                Et maintenant ? Qu'attendez vous pour agir ? Essayez notre
+                simulateur et tentez de voir sur quels aspects de votre
+                consommation vous pouvez vous améliorer.
+              </p>
+            </p>
           </p>
         </div>
         <img className="home-image" src={homeImage} alt="hand with a plant" />
